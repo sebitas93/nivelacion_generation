@@ -1,44 +1,62 @@
-## Nivelación Generation - Fundamentos de Programación
+# 🧠 Nivelación Generation - Fundamentos de Programación
 
-Este repositorio contiene ejercicios prácticos de nivelación en Python, enfocados en reforzar los fundamentos de programación aplicados al soporte técnico. Los ejercicios están organizados por nivel de dificultad: básico e intermedio.
+Este repositorio contiene una serie de ejercicios prácticos en Python enfocados en fortalecer los fundamentos de programación aplicados al soporte técnico. Están organizados por nivel de dificultad: **básico**, **intermedio** y **avanzado**.
+
+Cada script fue creado paso a paso y probado en consola. Algunos incluyen validaciones, menús interactivos y simulaciones de situaciones reales del entorno IT.
 
 ---
 
-## Contenido
+## 📂 Contenido
 
-### Nivel Básico
+### 🔰 Nivel Básico
 
 - **ejercicio1.py**  
-  Verificación de acceso con contraseña. Pide al usuario una clave e indica si es correcta comparándola con una contraseña predefinida (`"admin123"`).
+  Verifica si la contraseña ingresada por el usuario coincide con una clave predefinida (`admin123`).  
+  👉 Utiliza comparación simple con `if` para permitir o denegar el acceso.
 
 - **ejercicio2.py**  
-  Evaluación del espacio libre en disco. Solicita al usuario la cantidad de espacio disponible en GB y muestra alertas según el nivel de criticidad (bajo, medio o adecuado).
+  Solicita al usuario cuántos GB libres hay en el disco e imprime un mensaje de alerta según tres rangos definidos:  
+  - Menos de 10 GB → alerta crítica  
+  - Entre 10 y 50 GB → advertencia  
+  - Más de 50 GB → estado adecuado  
 
 - **ejercicio3.py**  
-  Conversión de unidades de almacenamiento. Convierte una cantidad de bytes ingresada por el usuario a kilobytes (KB), megabytes (MB) y gigabytes (GB), usando el sistema binario (divisiones por 1024).
+  Convierte una cantidad de bytes ingresada por el usuario a kilobytes (KB), megabytes (MB) y gigabytes (GB) usando el sistema binario (1 KB = 1024 bytes).  
+  👉 Los resultados se muestran con formato redondeado.
 
 ---
 
-### Nivel Intermedio
+### 🛡️ Nivel Intermedio
 
 - **ejercicio_intermedio.py**  
-  Verificación de seguridad de contraseñas. Comprueba que una contraseña cumpla con los siguientes requisitos:
-  - Al menos 8 caracteres
-  - Al menos un número
-  - Al menos una letra mayúscula
-  - Al menos un símbolo especial (como `!`, `@`, etc.)
+  Valida si una contraseña es segura. Verifica que tenga:
+  - Al menos 8 caracteres  
+  - Al menos un número  
+  - Al menos una letra mayúscula  
+  - Al menos un símbolo (como `!`, `@`, `#`, etc.)
 
   Además:
-  - La contraseña se ingresa de forma oculta usando `getpass`
-  - El usuario puede reintentar hasta que la contraseña sea válida
+  - Usa `getpass` para que el usuario escriba la contraseña sin que se vea en pantalla  
+  - Permite reintentar hasta que se ingrese una contraseña válida  
+
+- **verificacion_servidores.py**  
+  Simula la verificación de respuesta de varios servidores mediante "ping".  
+  - Usa una lista de IPs  
+  - Emplea `random.choice()` para simular si cada servidor responde o no  
+  - Muestra resultados en consola con íconos visuales (`✅`, `❌`)  
+  - La salida cambia cada vez que se ejecuta
 
 ---
 
-## Cómo ejecutar
+### 💼 Nivel Avanzado
 
-1. Asegúrate de tener Python instalado (versión 3.10 o superior recomendada).
-2. Abre una terminal en la carpeta donde están los archivos.
-3. Ejecuta cualquiera de los scripts. Ejemplo:
+- **inventario_equipos.py**  
+  Sistema de inventario de equipos informáticos con menú interactivo. Permite:
+  - Agregar equipos (tipo, marca, modelo, número de serie y ubicación)
+  - Buscar equipos por marca, tipo o ubicación
+  - Ver estadísticas del inventario (por tipo y por ubicación)
+  - Generar un informe completo con todos los equipos registrados
 
-```bash
-python ejercicio1.py
+  👉 La información se almacena temporalmente en una lista de diccionarios. Todo se ejecuta desde un menú simple en consola, ideal para pruebas y formación técnica.
+
+---
