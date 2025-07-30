@@ -1,12 +1,12 @@
-# Nivelación Generation - Fundamentos de Programación
+## Nivelación Generation - Fundamentos de Programación
 
 Este repositorio contiene ejercicios prácticos de nivelación en Python, enfocados en reforzar los fundamentos de programación aplicados al soporte técnico. Los ejercicios están organizados por nivel de dificultad: básico e intermedio.
 
 ---
 
-##Contenido
+## Contenido
 
-###Nivel Básico
+### Nivel Básico
 
 - **ejercicio1.py**  
   Verificación de acceso con contraseña. Pide al usuario una clave e indica si es correcta comparándola con una contraseña predefinida (`"admin123"`).
